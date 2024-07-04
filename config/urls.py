@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # url_pattern の追加
     path('', todo_views.index, name='index'),
+    path('<int:task_id>/', todo_views.detail, name='detail'),
 ]
